@@ -1,0 +1,212 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+
+<head>
+    <title>building step</title>
+    <link href="css/building_step.css" rel="stylesheet" type="text/css">
+    <script src="Jquery/script.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link href="https://dequeuniversity.com/rules/axe/4.5/duplicate-id?application=axeAPI">
+
+</head>
+
+<body>
+    <!--header box start-->
+    <header>
+        <div class="header"><a href="top.html">読売工務店株式会社 </a>
+            <nav>
+                <ul>
+                    <li><a href="about.html">会社概要</a></li>
+                    <li><a href="Access.html">アクセス</a></li>
+                    <li><a href="new.html">新着情報</a></li>
+                    <li><a href="contact.html">お問い合わ</a></li>
+
+            </nav>
+        </div>
+    </header>
+    <!--header box end-->
+
+
+    <!--top_main box start-->
+    <div class="tp_container">
+        <img src="img/residence/07.jpg" width="400" height="300" alt="" />
+        <img src="img/residence/08.jpg" width="400" height="300" alt="" />
+        <img src="img/residence/010.jpg" width="400" height="300" alt="" />
+        <div class="tp_container_txt">
+            <nav>
+                <ul>
+                    <li><a href="staff.html">スタッフ紹介</a></li>
+                    <li><a href="new.html">新築について</a></li>
+                    <li><a href="reform.html">リフォームについて</a></li>
+                    <li><a href="construction_example.html"> 施工事例</a></li>
+                    <li><a href="FAQ.html">よくある質問</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+    <!--top_main box end-->
+
+    <div class="container">
+        <div class="header_txt">
+            <h1>家が建つまでの流れ</h1>
+        </div>
+        <div class="content">
+            <div class="images">
+                <img id="image" src="img/slide/001.jpg">
+                <img id="image" src="img/slide/002.jpg">
+                <img id="image" src="img/slide/003.jpg">
+                <img id="image" src="img/slide/004.jpg">
+                <img id="image" src="img/slide/005.jpg">
+
+            </div>
+        </div>
+        <script>
+            var indexValue = 0;
+            function slideShow() {
+                setTimeout(slideShow, 2500);
+                var x;
+                const img = document.querySelectorAll("#image");
+                for (x = 0; x < img.length; x++) {
+                    img[x].style.display = "none";
+                }
+                indexValue++;
+                if (indexValue > img.length) { indexValue = 1 }
+                img[indexValue - 1].style.display = "block";
+            }
+            slideShow();
+        </script>
+
+        <div class="main_box">
+            <div class="box01">
+                <h3>面談</h3>
+                <p>まずはお客様の理想をお聞かせください。過去の施工事例を交え、どのようなコンセプトの家を設計するのが良いかをお客様と一緒に考えます。</p>
+            </div>
+
+            <div class="box01">
+                <h3>プランのご提案</h3>
+                <p>まずはお客様の理想をお聞かせください。過去の施工事例を交え、どのようなコンセプトの家を設計するのが良いかをお客様と一緒に考えます。</p>
+            </div>
+            </p>
+
+
+            <div class="box01">
+                <h3>住宅模型を見ながら最終チェック</h3>
+                <p>プランの詳細が確定したら、完成した住宅の簡易模型を作成いたします。
+                    この簡易模型を見ながら最終的なチェックをしていきます。
+                </p>
+            </div>
+
+
+            <div class="box01">
+                <h3>設計及び工事契約</h3>
+                <p>プランが固まりましたら、弊社と設計と工事に関係する契約を結んでいただきます。
+                    費用は施工する面積により異なります。</p>
+            </div>
+
+            <div class="box01">
+                <h3>詳細図面の作成</h3>
+                <p>実際に家を建てるための詳細設計を行います。
+                    コンセントの位置や外壁の素材など、細かい部分を決めながら作成していきます。</p>
+            </div>
+
+            <div class="box01">
+                <h3>建築確認申請</h3>
+                <p>家を建てるために必要な申請や手続きを行います。
+                </p>
+            </div>
+
+            <div class="box01">
+                <h3>地鎮祭</h3>
+                <p>家を建てる土地に神主さんを呼んで、地鎮祭と呼ばれる祭事を行います。
+                    安全祈願と称されることもあります。</p>
+            </div>
+
+            <div class="box01">
+                <h3>工事開始</h3>
+                <p>地鎮祭が終わり、建築許可がおりたら工事の開始になります。</p>
+            </div>
+
+            <div class="box01">
+                <h3>中間検査</h3>
+                <p>工事の途中で、役所による中間の検査が入ります。
+                    申請通りの建物を作成しているかをチェックします。</p>
+            </div>
+
+            <div class="box01">
+                <h3>完了検査</h3>
+                <p>建物が完成後、設計通りの建物が完成しているかどうか、役所によるチェックが入ります。</p>
+            </div>
+
+            <div class="box01">
+                <h3>引き渡し</h3>
+                <p>完了検査を合格しましたら、お客様に建物をお引渡しいたします。</p>
+            </div>
+            <div class="button">
+                <button type="button" class="btn btn-success"><a href="new_construction.html">新築一覧へ戻る</a></button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+
+
+    <footer>
+        <div class="footer_box">
+            <div class="session_box">
+                <div class="f_box01">
+
+
+                    <li><a href="new_construction.html">新築について</a></li>
+                    <li><a href="reform.html">リフォームについて</a></li>
+                    <li><a href="construction_example.html">施工事例</a></li>
+                    <li><a href="FAQ.html">よくある質問FAQ</a></li>
+                    <li><a href="staff.html">スタッフ紹介</a></li>
+
+
+
+
+                </div>
+
+                <div class="f_box02">
+
+
+
+                    <li><a href="about.html">会社概要</a></li>
+                    <li><a href="Access.html">アクセス</a></li>
+                    <li><a href="new.html">新着情報</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+
+
+                </div>
+
+                <div class="f_box03">
+
+
+                    <li>読売工務店株式会社</li>
+                    <li>〒108-0014京都港区芝</li>
+                    <li>5-26-16</li>
+                    <li>TEL03-3455-0221 </li>
+                    <li>一級建築士事務所東京都</li>
+                    <li>知事登録 第-12345-号</li>
+
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
